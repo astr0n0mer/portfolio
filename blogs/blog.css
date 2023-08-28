@@ -59,10 +59,10 @@ section {
   line-height: 1.75;
 }
 
-.links {
+/* .links {
   display: inline-flex;
   gap: 0.75em;
-}
+} */
 
 .links-wrapper {
   margin-block: 1em 2em;
