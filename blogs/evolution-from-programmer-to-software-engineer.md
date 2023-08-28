@@ -8,7 +8,7 @@ Well, a programmer is generally someone who's good at creating stuff through the
 
 A software engineer on the other hand, will question themself at each step of the process, ensuring that anything they change will be understood unambiguously by the next person who happens to encounter this change.
 
-There are no steps set in stone that one could follow to transition from a programmer to software engineer, but one can inculcate the following qualities/habits that are often found in good software engineers
+There are no steps set in stone that one could follow to transition from a programmer to software engineer, but one can inculcate the following qualities/habits that are often found in good software engineers.
 
 ## Think solutions, not code
 
