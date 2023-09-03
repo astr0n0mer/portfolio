@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../img/portfolio-favicon-imran.png"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css"
+    />
+    <link rel="stylesheet" href="./blog.css" />
+
+    <title>TDD: Write Quality Code, One Test at a Time | Imran Khan</title>
+  </head>
+  <body>
+    <main class="blog">
+      <header>
+        <img
+          src="../img/blogs/tdd-write-quality-code-one-test-at-a-time.jpeg"
+          alt="TDD: Write Quality Code, One Test at a Time"
+          loading="lazy"
+          class="cover-img"
+        />
+      </header>
+      <h1 class="blog-title">TDD: Write Quality Code, One Test at a Time</h1>
+
+      <section>
+        <p class="links-wrapper">
+          Also available on
+          <span class="links">
+            <a
+              href="https://medium.com/@astr0n0mer/tdd-write-quality-code-one-test-at-a-time-4bf18b0cfd99"
+              target="_blank"
+              >Medium</a
+            >
+            and
+            <a
+              href="https://dev.to/astronomer/tdd-write-quality-code-one-test-at-a-time-495i"
+              target="_blank"
+              >Dev.to</a
+            >
+          </span>
+        </p>
+
+        <div class="content">
+          <h2 id="why-even-test-code">Why even test code</h2>
+          <p>
+            Building software is not like constructing a building where you
+            build it and just forget about it. A software has to keep up with
+            new feature requests, bug fixes, latest trends, etc. I won&#39;t be
+            wrong when I say building and maintaining a software involves a ton
+            of blood, sweat (but mostly tears).
+          </p>
+          <blockquote
+            cite="https://en.wikiquote.org/wiki/Programming#:~:text=Weinberg's%20Second%20Law"
+          >
+            <p>
+              If builders built buildings the way programmers wrote programs,
+              then the first woodpecker that came along would destroy
+              civilization.
+            </p>
+
+            — <cite>Weinberg&#39;s Second Law</cite>
+          </blockquote>
+
+          <h2 id="benefits-of-testing">Benefits of testing</h2>
+          <ol>
+            <li>
+              Confidence
+              <ul>
+                <li>
+                  Well written code helps the team have confidence when making a
+                  change to the codebase that this change will not break the
+                  system.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Converts business logic to code
+              <ul>
+                <li>
+                  Testing is essentially automatically validating if the
+                  software produced fulfils the business requirements or not.
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/0f40a4fcf3d9f74d5cdf3f20b9a027b8d049cc0f/a2948/img/blog/tdd/intro/tdd-start-with-acceptance-test.svg"
+                    alt=""
+                    loading="lazy"
+                  />
+                </li>
+              </ul>
+            </li>
+            <li>
+              Reduce development cost
+              <ul>
+                <li>
+                  As a software grows, it gets worked on by a lot of people.
+                  Writing test ensures that every change is approved by the
+                  requirements and non-compliant code is blocked right at the
+                  source.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Detect failures before they even happen
+              <ul>
+                <li>
+                  Testing helps detect issues even before they reach the end
+                  user. This helps improve the quality assurance from the team
+                  as bad code is not shipped in the first place.
+                </li>
+              </ul>
+            </li>
+          </ol>
+          <p>
+            This is why testing your code is more important than ever, and TDD
+            (Test-driven Development) helps us achieve precisely that. TDD is
+            key practice of
+            <a
+              href="https://en.wikipedia.org/wiki/Extreme_programming"
+              target="_blank"
+              >Extreme Programming</a
+            >
+            that enables software engineers to have some degree of confidence
+            that their code will work as expected in production.
+          </p>
+          <h2 id="how-does-tdd-work">How does TDD work</h2>
+          <p>
+            <img
+              src="https://methodpoet.com/wp-content/uploads/2022/02/tdd-1024x710.png"
+              alt=""
+              height="360px"
+              loading="lazy"
+            />
+          </p>
+          <p>
+            As stated by
+            <a
+              href="https://en.wikipedia.org/wiki/Robert_C._Martin"
+              target="_blank"
+              >Robert &quot;Uncle Bob&quot; Martin</a
+            >, TDD uses the Red ⇨ Green ⇨ Refactor cycle to write code. The goal
+            is to keep the code changes as short as possible by writing the
+            minimum amount of code while maintaining the existing functionality.
+          </p>
+          <p>Let&#39;s see the actions involved in each step:</p>
+          <ol>
+            <li>
+              <strong>Red</strong>
+              <ul>
+                <li>Write a failing test.</li>
+                <li>No production code should be written before this step.</li>
+                <li>
+                  Ideally, you should have only one failing test at a time.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Green</strong>
+              <ul>
+                <li>Write just enough code to pass the test.</li>
+                <li>Future scenarios should be avoided in this step.</li>
+                <li>
+                  Prematurely optimizing your code here would introduce
+                  unnecessary complexity and might diverge your intent.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Refactor</strong>
+              <ul>
+                <li>Criticize and refactor the code.</li>
+                <li>
+                  Refactoring the code should not have any effect to the test
+                  result.
+                </li>
+                <li>
+                  As no one is good enough to write the working code and the
+                  most optimum code in the first go, optimizations should be
+                  reserved for this step.
+                </li>
+              </ul>
+            </li>
+          </ol>
+          <h2 id="benefits-of-tdd">Benefits of TDD</h2>
+          <ol>
+            <li>
+              Clarity of intent
+              <ul>
+                <li>
+                  As you write the purpose of the production code first, in the
+                  test in the form of a failing test, you have a clear intent of
+                  how the code should behave.
+                </li>
+              </ul>
+            </li>
+            <li>
+              No unused code
+              <ul>
+                <li>
+                  As the Red ⇨ Green ⇨ Refactor cycle requires you to write only
+                  as much code as necessary to pass a test, you avoid writing
+                  code for scenarios that might never happen.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Less debugging
+              <ul>
+                <li>
+                  Since ideally, all the scenarios will be tested while testing
+                  and development, there is little to no effort spent on
+                  debugging
+                </li>
+              </ul>
+            </li>
+            <li>
+              Easier to maintain
+              <ul>
+                <li>
+                  As all the components are tested in an isolated environment, a
+                  component&#39;s inner working can be changed completely while
+                  keeping the input and output same.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Saves cost in the long run
+              <ul>
+                <li>
+                  As TDD makes us write tests before writing any production
+                  code, these tests stand guard against breaking changes,
+                  thereby reducing possibility of bugs and enabling timely
+                  delivery of software.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Immediate feedback loop
+              <ul>
+                <li>
+                  Since you write the tests first, any code that does not
+                  contribute in fulfilling the business requirement is discarded
+                  at source. This helps you keep check of useful and useless
+                  code.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Tests document the code
+              <ul>
+                <li>
+                  Though documentation itself is a very important aspect of
+                  software engineering, tests could be a very good starting
+                  point stating how the software is expected to be used.
+                </li>
+              </ul>
+            </li>
+          </ol>
+          <p>
+            So, with the knowledge of TDD (Test-driven Development), will you
+            choose the blue pill and go back to continue making buggy software
+            or will you choose the red pill and start creating better tested,
+            extensible and maintainable software.
+          </p>
+          <p>
+            <img
+              src="https://suade.org/content/images/2020/12/tdd.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- <script
+      src="https://kit.fontawesome.com/d112bb07a1.js"
+      crossorigin="anonymous"
+    ></script> -->
+  </body>
+</html>
