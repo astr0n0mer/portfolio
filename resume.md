@@ -9,7 +9,7 @@ Frontend Engineer
 
 ## Experience
 
-### Software Development Engineer 1 @<a href="https://procedure.tech" target="_blank">Procedure Technologies</a>
+### Software Development Engineer 1 <span class="company">@<a href="https://procedure.tech" target="_blank">Procedure Technologies</a></span>
 
 <span class="muted">_Aug 2023 - Present_</span>
 
@@ -21,7 +21,7 @@ Frontend Engineer
 - Designed and maintained CI/CD pipelines using __GitHub Actions__, alongside efficient infrastructure provisioning via __Terraform__ on __AWS__, ensuring seamless deployments.
 </div>
 
-### Software Engineer 1 @<a href="https://maqsoftware.com/" target="_blank">MAQ Software</a>
+### Software Engineer 1 <span class="company">@<a href="https://maqsoftware.com/" target="_blank">MAQ Software</a></span>
 
 <span class="muted">_Feb 2022 - Jul 2023_</span>
 
