@@ -1,42 +1,241 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Imran Khan | Resume</title>
-	<meta http-equiv="refresh" content="0;url=https://tio.lv.tab.digital/s/a8JnXKpiKnXKkcY?dir=/&openfile=true">
+	<meta charset="utf-8" />
+	<title>Imran Khan - Resume</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<meta name="description" content="Check out my resume and professional work." />
-	<meta name="author" content="Imran Khan" />
-	<link rel="shortcut icon" href="https://imrank.vercel.app/img/portfolio-favicon-imran.png" type="image/x-icon" />
-
-	<!-- Apple/Android -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="apple-mobile-web-app-title" content="Imran Khan | Resume">
-	<link rel="icon" href="https://imrank.vercel.app/img/portfolio-favicon-imran.png">
-	<link rel="apple-touch-icon" href="https://imrank.vercel.app/img/portfolio-favicon-imran.png">
-	<link rel="apple-touch-icon-precomposed" href="https://imrank.vercel.app/img/portfolio-favicon-imran.png">
-	<link rel="mask-icon" sizes="any" href="https://imrank.vercel.app/img/portfolio-favicon-imran.png" color="#00679e">
-
-	<!-- Open Graph -->
-	<meta property="og:title" content="Imran Khan | Resume" />
-	<meta property="og:description" content="Check out my resume and professional work." />
-	<meta property="og:image" content="https://imrank.vercel.app/img/portfolio-favicon-imran.png" />
-	<meta property="og:url" content="https://imrank.vercel.app/resume" />
+	<!-- ===== Open Graph (rich social previews) ===== -->
 	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Imran Khan - Resume" />
+	<meta property="og:description"
+		content="Full-stack / Frontend Engineer - React, TypeScript, FastAPI. View projects, experience, and contact info." />
+	<meta property="og:url" content="https://yourdomain.com/resume.html" />
+	<meta property="og:image" content="https://yourdomain.com/og-resume-1200x630.png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
 
-	<!-- Twitter -->
+	<!-- ===== Twitter Card ===== -->
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Imran Khan | Resume" />
-	<meta name="twitter:description" content="Check out my resume and professional work." />
-	<meta name="twitter:image" content="https://imrank.vercel.app/img/portfolio-favicon-imran.png" />
+	<meta name="twitter:site" content="@imrank404" />
+	<meta name="twitter:title" content="Imran Khan - Resume" />
+	<meta name="twitter:description"
+		content="Full-stack / Frontend Engineer - React, TypeScript, FastAPI. View projects, experience, and contact info." />
+	<meta name="twitter:image" content="https://yourdomain.com/og-resume-1200x630.png" />
+
+	<!-- ===== CSS reset ===== -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css">
+	<link rel="stylesheet" href="./assets/styles/resume.css">
+
+	<!-- ===== Minimal resume styles ===== -->
+	<!-- <style> -->
+	<!-- 	:root { -->
+	<!-- 		--bg: #f6f7f8; -->
+	<!-- 		--card: #ffffff; -->
+	<!-- 		--text: #111; -->
+	<!-- 		--muted: #6b6f76; -->
+	<!-- 		--accent: #0366d6; -->
+	<!-- 		--link: #0366d6cc; -->
+	<!-- 		/* softer */ -->
+	<!-- 		--link-hover: #0366d6; -->
+	<!-- 		--maxw: 900px; -->
+	<!-- 	} -->
+	<!---->
+	<!-- 	@media (prefers-color-scheme: dark) { -->
+	<!-- 		:root { -->
+	<!-- 			--bg: #0d1117; -->
+	<!-- 			--card: #161b22; -->
+	<!-- 			--text: #e6edf3; -->
+	<!-- 			--muted: #8b949e; -->
+	<!-- 			--accent: #58a6ff; -->
+	<!-- 			--link: #58a6ffcc; -->
+	<!-- 			--link-hover: #58a6ff; -->
+	<!-- 		} -->
+	<!-- 	} -->
+	<!---->
+	<!-- 	body { -->
+	<!-- 		background: var(--bg); -->
+	<!-- 		color: var(--text); -->
+	<!-- 		font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; -->
+	<!-- 		line-height: 1.35; -->
+	<!-- 		/* tighter */ -->
+	<!-- 		-webkit-font-smoothing: antialiased; -->
+	<!-- 		-moz-osx-font-smoothing: grayscale; -->
+	<!-- 		display: flex; -->
+	<!-- 		justify-content: center; -->
+	<!-- 		padding: 40px 20px; -->
+	<!-- 	} -->
+	<!---->
+	<!-- 	.resume-card { -->
+	<!-- 		width: 100%; -->
+	<!-- 		max-width: var(--maxw); -->
+	<!-- 		background: var(--card); -->
+	<!-- 		border-radius: 10px; -->
+	<!-- 		box-shadow: 0 8px 24px rgba(16, 24, 40, 0.08); -->
+	<!-- 		padding: 32px; -->
+	<!-- 	} -->
+	<!---->
+	<!-- 	h1, -->
+	<!-- 	h2, -->
+	<!-- 	h3 { -->
+	<!-- 		margin-top: 1.1em; -->
+	<!-- 		margin-bottom: 0.5em; -->
+	<!-- 		font-weight: 600; -->
+	<!-- 	} -->
+	<!---->
+	<!-- 	h1 { -->
+	<!-- 		font-size: 26px; -->
+	<!-- 	} -->
+	<!---->
+	<!-- 	h2 { -->
+	<!-- 		font-size: 18px; -->
+	<!-- 		border-bottom: 1px solid #e0e0e0; -->
+	<!-- 		padding-bottom: 4px; -->
+	<!-- 	} -->
+	<!---->
+	<!-- 	h3 { -->
+	<!-- 		font-size: 15px; -->
+	<!-- 	} -->
+	<!---->
+	<!-- 	ul { -->
+	<!-- 		padding-left: 1.2em; -->
+	<!-- 	} -->
+	<!---->
+	<!-- 	li { -->
+	<!-- 		margin-bottom: 0.4em; -->
+	<!-- 	} -->
+	<!---->
+	<!-- 	a { -->
+	<!-- 		color: var(--link); -->
+	<!-- 		text-decoration: none; -->
+	<!-- 		transition: color 0.2s ease; -->
+	<!-- 	} -->
+	<!---->
+	<!-- 	a:hover { -->
+	<!-- 		color: var(--link-hover); -->
+	<!-- 		text-decoration: none; -->
+	<!-- 	} -->
+	<!---->
+	<!-- 	@media (max-width:600px) { -->
+	<!-- 		body { -->
+	<!-- 			padding: 20px 12px; -->
+	<!-- 		} -->
+	<!---->
+	<!-- 		.resume-card { -->
+	<!-- 			padding: 20px; -->
+	<!-- 		} -->
+	<!---->
+	<!-- 		h1 { -->
+	<!-- 			font-size: 22px; -->
+	<!-- 		} -->
+	<!-- 	} -->
+	<!-- </style> -->
 </head>
 
 <body>
-	<p>If you are not redirected,
-		<a href="https://tio.lv.tab.digital/s/a8JnXKpiKnXKkcY?dir=/&openfile=true">click here</a>.
-	</p>
+	<main class="resume-card">
+		<section id="imran-khan" style="text-align: center;">
+<h1>Imran Khan</h1>
+<p>Frontend Engineer</p>
+<p><a href="mailto:erimran404+r@gmail.com">Email</a> |
+<a href="https://imrank.vercel.app/" target="_blank">Portfolio</a> |
+<a href="https://github.com/astr0n0mer" target="_blank">GitHub</a> |
+<a href="https://www.linkedin.com/in/imrank404/" target="_blank">LinkedIn</a>
+| <a href="https://x.com/imrank404" target="_blank">X</a></p>
+</section>
+<hr />
+<h2 id="experience">Experience</h2>
+<h3 id="software-development-engineer-1-procedure-technologies">Software
+Development Engineer 1
+@<a href="https://procedure.tech" target="_blank">Procedure
+Technologies</a></h3>
+<p><span class="muted"><em>Aug 2023 - Present</em></span></p>
+<div style="text-align: justify;">
+<ul>
+<li>Optimized a core data pipeline by implementing parallel downloads,
+bulk querying, and leveraging <strong>Pandas'</strong> efficient data
+structures, reducing processing time from <strong>over 30 minutes to
+under 5 seconds</strong>.</li>
+<li>Successfully upgraded the codebase to <strong>Pydantic v2</strong>,
+ensuring all <strong>1000+ test cases</strong> passed without warnings,
+resulting in up to <strong>20x faster validation and serialization
+speeds</strong>.</li>
+<li>Integrated <strong>Datadog</strong> for log monitoring and
+deployment validation, ensuring staging environments function correctly
+before production pushes, contributing to a <strong>99.99%
+SLA</strong>.</li>
+<li>Managed a full-stack application, including a
+<strong>React/TypeScript</strong> frontend, <strong>FastAPI</strong>
+backend, and <strong>MongoDB</strong>, while utilizing advanced
+<strong>UNIX</strong> tools and <strong>Bash scripting</strong> for
+automation.</li>
+<li>Designed and maintained CI/CD pipelines using <strong>GitHub
+Actions</strong>, alongside efficient infrastructure provisioning via
+<strong>Terraform</strong> on <strong>AWS</strong>, ensuring seamless
+deployments.</li>
+</ul>
+</div>
+<h3 id="software-engineer-1-maq-software">Software Engineer 1
+@<a href="https://maqsoftware.com/" target="_blank">MAQ
+Software</a></h3>
+<p><span class="muted"><em>Feb 2022 - Jul 2023</em></span></p>
+<div style="text-align: justify;">
+<ul>
+<li>Designed and deployed high-performance analytics dashboards using
+<strong>YouTube APIs</strong>, serving thousands of daily active users
+with seamless user experience.</li>
+<li>Implemented continuous data integration pipelines with
+<strong>SQL</strong> and <strong>KQL</strong>, enabling near real-time
+dashboard updates without compromising performance.</li>
+<li>Collaborated with US-based clients to translate business
+requirements into effective technical solutions, enhancing data-driven
+decision-making.</li>
+</ul>
+</div>
+<hr />
+<h2 id="tech-stack">Tech Stack</h2>
+<p><strong>Frontend:</strong> React, TypeScript, Tailwind CSS, Styled
+Components, Redux<br />
+<strong>Backend &amp; Databases:</strong> FastAPI (Python), MongoDB,
+PostgreSQL, PocketBase<br />
+<strong>Tools &amp; Workflow:</strong> GitHub Actions, Terraform (AWS),
+CI/CD, Bash, Vim/Neovim<br />
+<strong>Others:</strong> UNIX/Linux, tmux</p>
+<hr />
+<h2 id="projects">Projects</h2>
+<ul>
+<li><strong>ShareMe</strong> - Image-sharing platform featuring Google
+login, search, categories, and a modern CMS-backed UI.
+<ul>
+<li>Made with React, Tailwind CSS, Sanity CMS</li>
+<li>Links:
+<a href="https://shareme-coral.vercel.app/" target="_blank">Demo</a> |
+<a href="https://github.com/astr0n0mer/shareme" target="_blank">Source</a></li>
+</ul></li>
+<li><strong>Workflow</strong> - A Kanban board application that uses
+drag-and-drop to enable seamless task state updates.
+<ul>
+<li>Made with React, Tailwind CSS, Vite</li>
+<li>Links:
+<a href="https://workflow-gamma.vercel.app/" target="_blank">Demo</a> |
+<a href="https://github.com/astr0n0mer/workflow" target="_blank">Source</a></li>
+</ul></li>
+</ul>
+<hr />
+<h2 id="education">Education</h2>
+<ul>
+<li><strong>B.E. in Computer Engineering</strong> - CGPA: 9.09/10
+<ul>
+<li>Rizvi College of Engineering (July 2018 - May 2022)</li>
+</ul></li>
+<li><strong>HSC (Computer Science)</strong> - 86.46%
+<ul>
+<li>Royal College of Arts, Science &amp; Commerce (June 2016 - May
+2018)</li>
+</ul></li>
+</ul>
+	</main>
 </body>
 
 </html>

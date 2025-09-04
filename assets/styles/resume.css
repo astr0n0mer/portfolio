@@ -1,0 +1,74 @@
+:root {
+	--bg: #ffffff;
+	--text: #111111;
+	--link: #0366d6;
+	--link-hover: #024c9a;
+	--maxw: 850px;
+	--muted: #6b6f76;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #1e222a;
+		--text: #e6edf3;
+		--link: #58a6ff;
+		--link-hover: #79b8ff;
+		--muted: #9ba3b0;
+	}
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--text);
+	font-size: 0.9em;
+	margin-inline: auto;
+	max-width: var(--maxw);
+	padding: 0.75em;
+}
+
+h1 {
+	font-size: 2.75em;
+	margin-block: 0.25em;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin-block: 0.5em;
+}
+
+h3 {
+	margin-block: 0.25em;
+}
+
+p {
+	margin-block: 0.25em;
+}
+
+a {
+	color: var(--link);
+	text-decoration-line: none;
+	transition: color 0.2s ease;
+}
+
+a:hover {
+	color: var(--link-hover);
+}
+
+ul {
+	padding-left: 1.5em;
+}
+
+#imran-khan {
+	h1 {
+		margin-block-end: 0;
+	}
+
+	p {
+		font-size: 1.25em;
+	}
+}
+
+.muted {
+	color: var(--muted);
+	font-size: 0.9em;
+}
